@@ -1,0 +1,182 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  /* --- HEADER --- */
+header {
+  background-color: #233000; /* dark green like image */
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.foodzero {
+  height: 40px;
+  width: 100px;
+}
+.leftbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+
+
+.menu-icon {
+  width: 30px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.fz {
+  display: ;
+  border: 1px solid;
+  font-family: "georgia" serif;
+  /* position: fixed; */
+  font-size: 22px;
+}
+.rightbar {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.rightbar p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.navbutton {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navbutton:hover {
+  background-color: white;
+  color: black;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  background-color: #233000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 120px;
+  height: 100%;
+  width: 100%;
+  /* position: relative; */
+}
+.hero-image {
+  /* height: 100%;
+  width: 100%; */
+  position: relative;
+  padding-bottom: 100px;
+  /* padding-right: 300px; */
+  object-fit: contain;
+  /* padding-top: 200px; */
+  /* object-position: left; */
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 60px;
+}
+
+.hero-text h2{
+  /* flex: 1; */
+  /* text-align: left; */
+  /* width: 50%; */
+  /* height: 50%; */
+  /* padding: 100px 80px;
+  position: relative;
+  font-size: 100px;
+   */
+  font-size: 80px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* .hero-text h2 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+} */
+
+.hero-text p {
+  color: #cfcfcf;
+  font-size: 14px;
+  margin-top: 20px;
+  max-width: 350px;
+}
+
+.scroll {
+  display: inline-block;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 14px;
+  color: #d9d9d9;
+  margin-top: 80px;
+}
+.hero image {
+  width: 100%;
+  height: 100%;
+}
+.hero-image img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  padding-bottom: 100px;
+  padding-top: 0;
+  /* padding-right: 100px; */
+  display: block;
+}
+
+/* .hero-image img {
+  width: 420px;
+  height: auto;
+  border-radius: 10px;
+} */
+
+/* --- SPICES SECTION --- */
+.hero-spices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.hero-spices img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
