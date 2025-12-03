@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Overlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+
+<!-- FULL SCREEN MENU PAN<EL -->
+<div id="menuOverlay">
+
+    <!-- Close Button -->
+    <a href="../home/index.html"><button id="closeMenu">✕</button></a>
+
+    <!-- Background -->
+    <div class="bg"></div>
+
+    <!-- LEFT SIDE TEXT MENU -->
+    <div class="menu-left">
+
+        <ul class="main-menu">
+
+           <a href="../home/index.html"> <li>• HOME</li></a>
+
+            <a href="../menu/index.html"><li>• MENU</li></a>
+
+            <li class="has-sub">
+                <span>• BLOGS</span>
+
+                <ul class="sub-menu">
+                   <a href="../blog1/index.html"> <li>Blog 1</li></a>
+                    <a href="../blog2/index.html"><li>Blog 2</li></a>
+                    <!-- <li>Sidebar Post</li> -->
+                </ul>
+            </li>
+
+           <a href="../about/index.html"> <li>• ABOUT</li></a>
+
+            <a href="../contact/index.html"><li>• CONTACT</li></a>
+            <a href="../portfolio/index.html"><li>• PORTFOLIO</li></a>
+
+        </ul>
+
+    </div>
+
+    <!-- RIGHT SIDE CONTACT INFO -->
+    <div class="menu-right">
+        <div>
+        <h3>Contact</h3>
+        <div class="divider"></div>
+        </div>
+<div>
+        <p>+46 0 324 000 00</p>
+        <p>info@foodzero.com</p>
+</div>
+<br>
+<br>
+<div>
+        <p>1999 SewardBard Blvd,<br>
+           Culver City, CA, 90230</p>
+</div>
+        <div class="social">
+            <img src="assets/facebook.png" alt="">
+            <img src="assets/instagram.png" alt="">
+            <img src="assets/youtube.png" alt="">
+            <img src="assets/twitter.png" alt="">
+        </div>
+    </div>
+
+</div>
+
+<button class="theme-toggle">🌙</button>
+<script src="script.js"></script>
+<script src="../shared.js"></script>
+</body>
+</html>

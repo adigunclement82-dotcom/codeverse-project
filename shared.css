@@ -1,0 +1,368 @@
+/* ==========================================
+   SHARED STYLES - All Pages
+   ========================================== */
+
+/* DARK MODE VARIABLES */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --border-color: #dddddd;
+  --header-bg: #233000;
+  --accent: #233000;
+}
+
+body.dark-mode {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --border-color: #444444;
+  --header-bg: #0f0f0f;
+  --accent: #ffffff;
+}
+
+/* ==========================================
+   DARK MODE TOGGLE BUTTON
+   ========================================== */
+.theme-toggle {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--text-primary);
+  color: var(--text-primary);
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .theme-toggle {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+/* ==========================================
+   SCROLL ANIMATIONS (Fade In & Slide Up)
+   ========================================== */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger animations for multiple elements */
+.fade-in:nth-child(1) { animation-delay: 0.1s; }
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.3s; }
+.fade-in:nth-child(4) { animation-delay: 0.4s; }
+
+.slide-up:nth-child(1) { animation-delay: 0.1s; }
+.slide-up:nth-child(2) { animation-delay: 0.2s; }
+.slide-up:nth-child(3) { animation-delay: 0.3s; }
+.slide-up:nth-child(4) { animation-delay: 0.4s; }
+
+/* ==========================================
+   TEXT HOVER EFFECTS
+   ========================================== */
+h1, h2, h3, h4, h5, h6, p, span, a {
+  transition: all 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover,
+p:hover, span:hover {
+  color: var(--accent);
+  transform: scale(1.05);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================
+   BUTTON ANIMATIONS & HOVER EFFECTS
+   ========================================== */
+button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+button:hover:before {
+  width: 300px;
+  height: 300px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ==========================================
+   CARD HOVER EFFECTS
+   ========================================== */
+.pears, .c-box, .deep, .steak, .cucumber, .natural,
+.fashion, .leftblock, .rightblock {
+  transition: all 0.4s ease;
+}
+
+.pears:hover, .c-box:hover, .deep:hover, .steak:hover,
+.cucumber:hover, .natural:hover, .fashion:hover,
+.leftblock:hover, .rightblock:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================
+   RESERVATION MODAL
+   ========================================== */
+.reservation-modal {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  animation: modalSlideDown 2.5s ease forwards;
+}
+
+.reservation-modal.hide {
+  animation: modalSlideUp 2.5s ease forwards;
+}
+
+@keyframes modalSlideDown {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes modalSlideUp {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+.modal-content {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.modal-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: "Georgia", serif;
+}
+
+.modal-content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: var(--text-secondary);
+}
+
+.modal-content button {
+  background: var(--accent);
+  color: var(--text-primary);
+  padding: 12px 40px;
+  border: 2px solid var(--text-primary);
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-content button:hover {
+  background: var(--text-primary);
+  color: var(--accent);
+}
+
+/* ==========================================
+   DARK MODE SPECIFIC ADJUSTMENTS
+   ========================================== */
+body.dark-mode {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body.dark-mode header {
+  background: var(--header-bg);
+}
+
+body.dark-mode section {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body.dark-mode .fs {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body.dark-mode .fs .menu h2,
+body.dark-mode .fs h3 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .fs .menu p,
+body.dark-mode .fs p {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .deep,
+body.dark-mode .steak,
+body.dark-mode .cucumber,
+body.dark-mode .natural {
+  color: var(--text-primary);
+}
+
+body.dark-mode .deep span,
+body.dark-mode .steak span,
+body.dark-mode .cucumber span,
+body.dark-mode .natural span {
+  color: var(--text-primary);
+}
+
+body.dark-mode form input,
+body.dark-mode form select {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+body.dark-mode form input::placeholder {
+  color: var(--text-secondary);
+}
+
+body.dark-mode footer {
+  background: #0f0f0f;
+  color: var(--text-primary);
+}
+
+body.dark-mode .form-section {
+  background: var(--bg-secondary);
+}
+
+body.dark-mode .cook {
+  background: var(--bg-secondary);
+}
+
+body.dark-mode .calories {
+  background: var(--bg-primary);
+}
+
+body.dark-mode .caloriestext h1,
+body.dark-mode .caloriestext p {
+  color: var(--text-primary);
+}
+
+body.dark-mode .lorem {
+  background: var(--bg-primary);
+}
+
+body.dark-mode .loremtext h3 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .rightbar p {
+  color: var(--text-secondary);
+}
+
+/* ==========================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================== */
+@media (max-width: 768px) {
+  .theme-toggle {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+  }
+
+  .modal-content {
+    padding: 30px;
+  }
+
+  .modal-content h2 {
+    font-size: 24px;
+  }
+}

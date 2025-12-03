@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ============================================
+   NAVBAR
+============================================ */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    padding: 30px 80px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    width: 140px;
+}
+
+.hamburger {
+    width: 26px;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.phone {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.reserve-btn {
+    padding: 10px 28px;
+    border: 1px solid #fff;
+    background-color: black;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ============================================
+   HERO / WHO WE ARE SECTION
+============================================ */
+.who-we-are {
+    min-height: 100vh;
+    width: 100%;
+    background: url("assets/hero.png") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.who-we-are .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.who-content {
+    position: relative;
+    z-index: 10;
+    color: white;
+    font-family: "Playfair Display", serif;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+    max-width: 900px;
+}
+
+.who-content h1 {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.who-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* ============================================
+   BLOG CARDS SECTION
+============================================ */
+.pear {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 80px;
+}
+
+.linea1 {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.pears {
+    flex: 1;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Georgia", serif;
+    gap: 20px;
+}
+
+.pear-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.pear-img img.left-pear {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.fashion {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #233000;
+    padding: 15px 18px;
+    border-radius: 3px;
+}
+
+.fashion h2 {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.pearcomment span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pearcomment img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.pearcomment p {
+    font-size: 13px;
+    color: #777;
+    margin: 0;
+}
+
+.fruitpear h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.fruitpear img {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.fruitpear p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* ============================================
+   PAGINATION BUTTONS
+============================================ */
+.btn-line {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.btn-line button {
+    min-width: 50px;
+    height: 35px;
+    padding: 0 15px;
+    border: 2px solid #333;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Inter, sans-serif;
+}
+
+.btn-line button:hover {
+    background-color: #233000;
+    color: white;
+    border-color: #233000;
+}
+
+/* ============================================
+   FOOTER
+============================================ */
+footer {
+    width: 100%;
+    background-color: #1F2603;
+    padding: 70px 80px;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.ffz, .fct, .fne {
+    flex: 1;
+    min-width: 250px;
+}
+
+.ffz h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 80px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.fct h3,
+.fne h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.fct p {
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footerboc {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footerboc input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 15px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-family: Inter, sans-serif;
+}
+
+.footerboc input::placeholder {
+    color: #ccc;
+}
+
+.footerboc button {
+    background-color: #5E6A1A;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.footerboc button:hover {
+    background-color: #4a5415;
+}
+
+.fne > p {
+    font-size: 12px;
+    color: #ddd;
+}
+
+.footer-line {
+    display: block;
+    width: 100%;
+    margin: 40px 0 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-bottom > p {
+    font-size: 13px;
+    color: #ddd;
+}
+
+.fsi {
+    display: flex;
+    gap: 20px;
+}
+
+.fsi img {
+    width: 40px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.fsi img:hover {
+    opacity: 0.7;
+}
+
+/* ============================================
+   RESPONSIVE - LARGE SCREENS (1200px+)
+============================================ */
+@media (min-width: 1200px) {
+    .who-content h1 {
+        font-size: 100px;
+    }
+    
+    .ffz h2 {
+        font-size: 100px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MEDIUM SCREENS (768px - 1024px)
+============================================ */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px 40px;
+    }
+    
+    .who-content {
+        padding: 0 40px;
+    }
+    
+    .who-content h1 {
+        font-size: 60px;
+    }
+    
+    .who-content p {
+        font-size: 18px;
+    }
+    
+    .pear {
+        padding: 60px 40px;
+        gap: 60px;
+    }
+    
+    .linea1 {
+        gap: 30px;
+    }
+    
+    .pears {
+        max-width: 400px;
+    }
+    
+    .fruitpear h2 {
+        font-size: 20px;
+    }
+    
+    footer {
+        padding: 50px 40px;
+    }
+    
+    .ffz h2 {
+        font-size: 60px;
+    }
+    
+    .fct h3,
+    .fne h3 {
+        font-size: 24px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - SMALL/MEDIUM (768px and below)
+============================================ */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    
+    .logo {
+        width: 100px;
+    }
+    
+    .nav-right {
+        gap: 15px;
+    }
+    
+    .phone {
+        display: none;
+    }
+    
+    .reserve-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .who-content {
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .who-content h1 {
+        font-size: 42px;
+    }
+    
+    .who-content p {
+        font-size: 16px;
+    }
+    
+    .pear {
+        padding: 40px 20px;
+        gap: 50px;
+    }
+    
+    .linea1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .pears {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .pear-img {
+        aspect-ratio: 4 / 3;
+    }
+    
+    .fruitpear h2 {
+        font-size: 18px;
+    }
+    
+    .fruitpear p {
+        font-size: 14px;
+    }
+    
+    .btn-line {
+        gap: 10px;
+    }
+    
+    .btn-line button {
+        min-width: 40px;
+        height: 32px;
+        font-size: 13px;
+    }
+    
+    footer {
+        padding: 40px 20px;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .ffz, .fct, .fne {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .ffz h2 {
+        font-size: 50px;
+    }
+    
+    .fct h3,
+    .fne h3 {
+        font-size: 22px;
+    }
+    
+    .fct p {
+        font-size: 14px;
+    }
+    
+    .footerboc {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footerboc input {
+        width: 100%;
+        min-width: unset;
+    }
+    
+    .footerboc button {
+        width: 100%;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .fsi {
+        justify-content: center;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - EXTRA SMALL SCREENS (480px and below)
+============================================ */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .logo {
+        width: 80px;
+    }
+    
+    .nav-left {
+        gap: 15px;
+    }
+    
+    .hamburger {
+        width: 22px;
+    }
+    
+    .reserve-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+    
+    .who-content h1 {
+        font-size: 32px;
+    }
+    
+    .who-content p {
+        font-size: 14px;
+    }
+    
+    .pear {
+        padding: 30px 15px;
+        gap: 40px;
+    }
+    
+    .pears {
+        gap: 15px;
+    }
+    
+    .pearcomment p {
+        font-size: 11px;
+    }
+    
+    .pearcomment img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .fruitpear h2 {
+        font-size: 16px;
+    }
+    
+    .fruitpear p {
+        font-size: 13px;
+    }
+    
+    .btn-line button {
+        min-width: 35px;
+        height: 30px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    
+    footer {
+        padding: 30px 15px;
+    }
+    
+    .ffz h2 {
+        font-size: 40px;
+    }
+    
+    .fct h3,
+    .fne h3 {
+        font-size: 20px;
+    }
+    
+    .fsi img {
+        width: 30px;
+        height: 16px;
+    }
+}

@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    width: 140px;
+}
+
+.hamburger {
+    width: 26px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.phone {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.reserve-btn {
+    padding: 10px 28px;
+    border: 1px solid #fff;
+    background-color: black;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ==================== WHO WE ARE SECTION ==================== */
+.who-we-are {
+    height: 100vh;
+    width: 100%;
+    background: url("assets/hero.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.who-we-are .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+}
+
+.who-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 500px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.who-content h1 {
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.who-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    opacity: 0.9;
+    font-family: Inter, sans-serif;
+}
+
+/* ==================== OUR STORY SECTION ==================== */
+.our-story {
+    width: 100%;
+    padding: 80px 5%;
+    position: relative;
+}
+
+.chef-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.tomato {
+    position: absolute;
+    width: 200px;
+    left: 25%;
+    top: -50px;
+    z-index: 1;
+}
+
+.story-text {
+    flex: 1;
+    max-width: 500px;
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
+.story-text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.chef {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.chef img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Manager Section */
+.manager-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 100px;
+    padding-left: 100px;
+}
+
+.rm h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.rm p {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.manager-image {
+    width: 350px;
+    height: 400px;
+}
+
+.manager-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.manager-text {
+    max-width: 400px;
+}
+
+.manager-text p {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Executive Chef Section */
+.manager-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    padding-right: 100px;
+}
+
+.bottomtext h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.bottomtext p {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bottomimage {
+    width: 400px;
+    height: 450px;
+}
+
+.bottomimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottomlorem {
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    max-width: 400px;
+}
+
+.bottomlorem p {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: right;
+}
+
+/* ==================== VIDEO SECTION ==================== */
+.video-hero {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.play-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+
+.play-btn {
+    width: 75px;
+    height: 75px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+}
+
+.video-content {
+    position: absolute;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.video-content h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.video-content p {
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+}
+
+/* ==================== SOPHISTICATED PROCESS ==================== */
+.last {
+    padding: 100px 5%;
+    position: relative;
+}
+
+.last-title {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.lastleaf {
+    position: absolute;
+    width: 180px;
+    right: 10%;
+    top: 50px;
+}
+
+.lastleaf img {
+    width: 100%;
+}
+
+.lastle {
+    position: absolute;
+    width: 180px;
+    left: 0;
+    bottom: 100px;
+}
+
+.lastle img {
+    width: 100%;
+}
+
+.process-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 80px;
+    padding: 0 10%;
+}
+
+.pickled-block {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.slice, .pickled, .bake {
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.slice img, .pickled img, .bake img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slicetext, .pickledtext, .baketext {
+    padding-top: 30px;
+}
+
+.slicetext h2, .pickledtext h2, .baketext h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.slicetext p, .pickledtext p, .baketext p {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* ==================== FORM SECTION ==================== */
+.form-section {
+    width: 100%;
+    background: #e7ecd8;
+    padding: 80px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.reservation h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.reservation p {
+    color: #555;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formbox {
+    margin-bottom: 20px;
+}
+
+form input,
+form select {
+    width: 260px;
+    height: 60px;
+    border-radius: 3px;
+    border: 1.5px solid #c3c3c3;
+    background: #fff;
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    color: #333;
+    outline: none;
+}
+
+form button {
+    margin-top: 30px;
+    background: #233000;
+    color: #fff;
+    padding: 14px 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Inter, sans-serif;
+}
+
+form button:hover {
+    background: #1d2900;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    width: 100%;
+    background-color: #1F2603;
+    padding: 70px 5%;
+    color: white;
+    font-family: Inter, sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+footer .ffz,
+footer .fct,
+footer .fne {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer .ffz h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+footer .fct h3,
+footer .fne h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+footer .fct p {
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footerboc {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footerboc input {
+    width: 220px;
+    padding: 12px 15px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.footerboc input::placeholder {
+    color: #ccc;
+}
+
+.footerboc button {
+    background-color: #5E6A1A;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    cursor: pointer;
+}
+
+.fne > p {
+    font-size: 12px;
+    color: #ddd;
+}
+
+/* ==================== TABLET (768px - 1024px) ==================== */
+@media (max-width: 1024px) {
+    .navbar {
+        left: 40px;
+        right: 40px;
+    }
+
+    .who-content {
+        width: 80%;
+    }
+
+    .who-content h1 {
+        font-size: 70px;
+        white-space: normal;
+    }
+
+    .story-text {
+        padding-left: 50px;
+    }
+
+    .story-text h2 {
+        font-size: 48px;
+    }
+
+    .tomato {
+        width: 150px;
+        left: 20%;
+    }
+
+    .chef {
+        width: 350px;
+        height: 450px;
+    }
+
+    .manager-top {
+        padding-left: 50px;
+        flex-wrap: wrap;
+    }
+
+    .manager-bottom {
+        padding-right: 50px;
+    }
+
+    .bottomlorem {
+        left: 50px;
+    }
+
+    .process-item {
+        padding: 0 5%;
+        gap: 40px;
+    }
+
+    .slice, .pickled, .bake {
+        width: 300px;
+        height: 300px;
+    }
+
+    .lastleaf {
+        width: 140px;
+        right: 5%;
+    }
+
+    .lastle {
+        width: 140px;
+    }
+
+    .video-content h1 {
+        font-size: 48px;
+    }
+
+    footer .ffz h2 {
+        font-size: 60px;
+    }
+}
+
+/* ==================== MOBILE (< 768px) ==================== */
+@media (max-width: 768px) {
+    .navbar {
+        left: 20px;
+        right: 20px;
+        top: 20px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .reserve-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    /* Who We Are */
+    .who-content {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .who-content h1 {
+        font-size: 48px;
+    }
+
+    .who-content p {
+        font-size: 16px;
+    }
+
+    /* Our Story */
+    .our-story {
+        padding: 60px 20px;
+    }
+
+    .chef-top {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .tomato {
+        width: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -30px;
+    }
+
+    .story-text {
+        padding: 120px 0 40px 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .story-text h2 {
+        font-size: 36px;
+    }
+
+    .story-text p {
+        font-size: 16px;
+    }
+
+    .chef {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* Manager */
+    .manager-top {
+        flex-direction: column;
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rm h2 {
+        font-size: 28px;
+    }
+
+    .manager-image {
+        width: 100%;
+        height: 350px;
+    }
+
+    .manager-text {
+        max-width: 100%;
+    }
+
+    /* Executive Chef */
+    .manager-bottom {
+        flex-direction: column;
+        padding-right: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bottomtext h2 {
+        font-size: 28px;
+    }
+
+    .bottomimage {
+        width: 100%;
+        height: 350px;
+    }
+
+    .bottomlorem {
+        position: relative;
+        left: 0;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .bottomlorem p {
+        text-align: center;
+    }
+
+    /* Video */
+    .video-hero {
+        height: 350px;
+        margin-top: 60px;
+    }
+
+    .video-content h1 {
+        font-size: 32px;
+    }
+
+    .video-content p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .play-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    /* Sophisticated Process */
+    .last {
+        padding: 60px 20px;
+    }
+
+    .last-title {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+
+    .lastleaf {
+        width: 100px;
+        right: 10px;
+        top: 20px;
+    }
+
+    .lastle {
+        width: 100px;
+        bottom: 50px;
+    }
+
+    .process-item {
+        flex-direction: column;
+        padding: 0;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .pickled-block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slice, .pickled, .bake {
+        width: 100%;
+        height: 280px;
+    }
+
+    .slicetext h2, .pickledtext h2, .baketext h2 {
+        font-size: 26px;
+    }
+
+    .slicetext p, .pickledtext p, .baketext p {
+        font-size: 15px;
+    }
+
+    /* Form */
+    .form-section {
+        padding: 60px 20px;
+    }
+
+    .reservation h2 {
+        font-size: 32px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input,
+    form select {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer .ffz h2 {
+        font-size: 50px;
+    }
+
+    footer .fct h3,
+    footer .fne h3 {
+        font-size: 24px;
+    }
+
+    .footerboc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerboc input {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* ==================== SMALL MOBILE (< 480px) ==================== */
+@media (max-width: 480px) {
+    .who-content h1 {
+        font-size: 36px;
+    }
+
+    .who-content p {
+        font-size: 14px;
+    }
+
+    .story-text h2 {
+        font-size: 28px;
+    }
+
+    .tomato {
+        width: 100px;
+    }
+
+    .video-content h1 {
+        font-size: 26px;
+    }
+
+    .last-title {
+        font-size: 26px;
+    }
+
+    .reservation h2 {
+        font-size: 26px;
+    }
+
+    footer .ffz h2 {
+        font-size: 40px;
+    }
+}

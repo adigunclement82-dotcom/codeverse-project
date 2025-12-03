@@ -1,0 +1,559 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ===================== HERO SECTION ===================== */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: url("assets/hero.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* NAVBAR */
+.navbar {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 2px;
+    background: #fff;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone {
+    display: none;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.reserve-btn {
+    padding: 8px 20px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* ===================== FOOD SECTION ===================== */
+.food-section {
+    padding: 40px 20px 60px;
+}
+
+.food-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.food-row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.food-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.img-left {
+    max-width: 300px;
+}
+
+.img-center {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.img-bottom {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.text-block h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.text-block .lead {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.text-block .body {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.center-paragraph {
+    max-width: 400px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.center-paragraph p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.cooking-suggestions {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cooking-suggestions h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.cooking-suggestions p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ===================== NAV SECTION ===================== */
+.nav-section {
+    background-color: #e7eedc;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.nav-prev,
+.nav-next {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.nav-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+}
+
+.nav-dots {
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+    background-color: #1F2603;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-logo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.footer-contact h3,
+.footer-newsletter h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.newsletter-form input::placeholder {
+    color: #ccc;
+}
+
+.newsletter-form button {
+    background-color: #5E6A1A;
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #6d7b20;
+}
+
+.newsletter-note {
+    font-size: 11px;
+    color: #ddd;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-bottom > p {
+    font-size: 13px;
+    color: #ddd;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+/* ===================== TABLET (768px+) ===================== */
+@media (min-width: 768px) {
+    .navbar {
+        padding: 30px 40px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .phone {
+        display: block;
+    }
+
+    .nav-right {
+        gap: 30px;
+    }
+
+    .reserve-btn {
+        padding: 10px 28px;
+        font-size: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 60px;
+    }
+
+    /* Food Section */
+    .food-section {
+        padding: 60px 40px 80px;
+    }
+
+    .food-row {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .row-1 {
+        justify-content: center;
+    }
+
+    .row-2 {
+        justify-content: center;
+    }
+
+    .img-left {
+        max-width: 280px;
+    }
+
+    .img-center {
+        max-width: 380px;
+    }
+
+    .img-bottom {
+        max-width: 550px;
+    }
+
+    .text-block {
+        max-width: 300px;
+    }
+
+    .text-block h2 {
+        font-size: 36px;
+    }
+
+    .cooking-suggestions h2 {
+        font-size: 36px;
+    }
+
+    /* Nav Section */
+    .nav-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 40px;
+    }
+
+    .nav-prev {
+        text-align: left;
+    }
+
+    .nav-next {
+        text-align: right;
+    }
+
+    .nav-title {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 60px 40px;
+    }
+
+    .footer-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-logo,
+    .footer-contact,
+    .footer-newsletter {
+        flex: 1;
+    }
+
+    .footer-logo h2 {
+        font-size: 80px;
+    }
+
+    .newsletter-form {
+        flex-direction: row;
+    }
+
+    .newsletter-form input {
+        width: 200px;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* ===================== DESKTOP (1024px+) ===================== */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 30px 80px;
+    }
+
+    .logo-text {
+        font-size: 28px;
+    }
+
+    .nav-left {
+        gap: 25px;
+    }
+
+    .nav-right {
+        gap: 35px;
+    }
+
+    .hero-content h1 {
+        font-size: 90px;
+    }
+
+    /* Food Section */
+    .food-section {
+        padding: 80px 80px 100px;
+    }
+
+    .food-row {
+        gap: 80px;
+    }
+
+    .img-left {
+        max-width: 320px;
+    }
+
+    .img-center {
+        max-width: 420px;
+    }
+
+    .img-bottom {
+        max-width: 600px;
+    }
+
+    .text-block {
+        max-width: 320px;
+    }
+
+    .text-block h2 {
+        font-size: 40px;
+    }
+
+    .text-block .lead,
+    .text-block .body {
+        font-size: 15px;
+    }
+
+    .center-paragraph {
+        max-width: 450px;
+    }
+
+    .center-paragraph p {
+        font-size: 18px;
+    }
+
+    .cooking-suggestions h2 {
+        font-size: 40px;
+    }
+
+    /* Nav Section */
+    .nav-section {
+        padding: 60px 80px;
+    }
+
+    .nav-title {
+        font-size: 20px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 70px 10%;
+    }
+
+    .footer-logo h2 {
+        font-size: 100px;
+    }
+
+    .footer-contact h3,
+    .footer-newsletter h3 {
+        font-size: 30px;
+    }
+
+    .footer-contact p {
+        font-size: 20px;
+    }
+
+    .newsletter-form input {
+        width: 250px;
+    }
+}

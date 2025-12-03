@@ -1,0 +1,773 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background: url("assets/hero.jpg") center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* NAVIGATION */
+.navbar {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    width: 140px;
+}
+
+.hamburger {
+    width: 26px;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.phone {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.reserve-btn {
+    padding: 10px 28px;
+    border: 1px solid #fff;
+    background-color: black;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* HERO TEXT */
+.hero-text {
+    position: absolute;
+    left: 80px;
+    top: 48%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: white;
+}
+
+.hero-text h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 68px;
+    font-weight: 500;
+}
+
+.hero-text p {
+    margin-top: 12px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* OPEN TIME */
+.open-time {
+    position: absolute;
+    right: 80px;
+    bottom: 120px;
+    color: white;
+    z-index: 20;
+    font-family: Inter, sans-serif;
+}
+
+.open-time h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 260px;
+    margin: 8px 0 14px 0;
+}
+
+.days {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.schedule {
+    display: flex;
+    gap: 40px;
+}
+
+.schedule .item h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+}
+
+.schedule .item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* ==================== CONTACT SECTION ==================== */
+.contact-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 60px;
+    background: #fff;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 40px;
+}
+
+.contact-img {
+    width: 50%;
+    max-width: 600px;
+    height: 500px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.contact-text-wrapper {
+    position: relative;
+    width: 45%;
+}
+
+.orange-outline {
+    position: absolute;
+    top: -220px;
+    left: -200px;
+    width: 300px;
+    opacity: 0.45;
+    z-index: 1;
+}
+
+.contact-text {
+    position: relative;
+    z-index: 5;
+    font-family: Inter, sans-serif;
+    font-size: 25px;
+    line-height: 1.7;
+    color: #000;
+    margin-left: 60px;
+}
+
+.contact-text a {
+    color: #577a00;
+    text-decoration: none;
+}
+
+.phone-number {
+    color: #8bb000;
+    font-weight: 500;
+}
+
+/* CONTACT LOWER */
+.contact-lower {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    gap: 40px;
+}
+
+.location-block {
+    width: 50%;
+}
+
+.location-text {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.maps-btn {
+    padding: 10px 26px;
+    border: 1px solid #000;
+    background: transparent;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.maps-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.location-img {
+    width: 45%;
+    max-width: 430px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ==================== RESERVATION SECTION ==================== */
+.reservation-section {
+    min-height: 800px;
+    background: #e7ebdd;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.mint-img {
+    position: absolute;
+    top: 40px;
+    left: 330px;
+    width: 270px;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.reservation-container {
+    width: 100%;
+    max-width: 820px;
+    padding-top: 30px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
+.reservation-title {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.reservation-subtitle {
+    font-size: 15px;
+    margin-bottom: 35px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.double-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.reservation-form input,
+.reservation-form select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #444;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+}
+
+.double-row input,
+.double-row select {
+    width: calc(50% - 10px);
+}
+
+.form-btn {
+    display: block;
+    width: 150px;
+    padding: 12px 0;
+    margin: 25px auto 0 auto;
+    background: #5d6802;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+.form-btn:hover {
+    background: #495300;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    width: 100%;
+    background-color: #1F2603;
+    padding: 70px 5%;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+footer .ffz,
+footer .fct,
+footer .fne {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer .ffz h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+footer .fct h3,
+footer .fne h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+footer .fct p {
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footerboc {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footerboc input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 15px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.footerboc input::placeholder {
+    color: #ccc;
+}
+
+.footerboc button {
+    background-color: #5E6A1A;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footerboc button:hover {
+    background-color: #495300;
+}
+
+.fne > p {
+    font-size: 11px;
+    color: #ddd;
+}
+
+.footer-line {
+    display: block;
+    width: 100%;
+    margin: 40px 0 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-bottom > p {
+    font-size: 13px;
+    color: #ddd;
+}
+
+.fsi {
+    display: flex;
+    gap: 20px;
+}
+
+.fsi img {
+    width: 40px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.fsi img:hover {
+    opacity: 0.7;
+}
+
+/* ==================== RESPONSIVE - TABLET (768px - 1024px) ==================== */
+@media screen and (max-width: 1024px) {
+    .hero {
+        padding: 0 40px;
+    }
+
+    .navbar {
+        left: 40px;
+        right: 40px;
+    }
+
+    .hero-text {
+        left: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 52px;
+    }
+
+    .open-time {
+        right: 40px;
+        bottom: 80px;
+    }
+
+    .days {
+        position: relative;
+        left: 0;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .schedule {
+        gap: 25px;
+    }
+
+    .contact-section {
+        padding: 60px 40px;
+    }
+
+    .contact-img {
+        width: 45%;
+        height: 400px;
+    }
+
+    .contact-text {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    .orange-outline {
+        width: 200px;
+        top: -150px;
+        left: -100px;
+    }
+
+    .location-text {
+        font-size: 18px;
+    }
+
+    .mint-img {
+        left: 50px;
+        width: 200px;
+    }
+
+    .reservation-title {
+        font-size: 40px;
+    }
+
+    footer .ffz h2 {
+        font-size: 60px;
+    }
+}
+
+/* ==================== RESPONSIVE - MOBILE (< 768px) ==================== */
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 0 20px;
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+
+    .navbar {
+        left: 20px;
+        right: 20px;
+        top: 20px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .nav-right .phone {
+        display: none;
+    }
+
+    .reserve-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .hero-text {
+        left: 20px;
+        right: 20px;
+        top: 35%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .open-time {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 60vh;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+    }
+
+    .days {
+        position: relative;
+        left: 0;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .divider {
+        width: 100%;
+    }
+
+    .schedule {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .schedule .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .schedule .item span {
+        margin-top: 0;
+    }
+
+    /* CONTACT SECTION MOBILE */
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact-text-wrapper {
+        width: 100%;
+    }
+
+    .orange-outline {
+        display: none;
+    }
+
+    .contact-text {
+        margin-left: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .contact-lower {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .location-block {
+        width: 100%;
+    }
+
+    .location-text {
+        font-size: 16px;
+    }
+
+    .location-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* RESERVATION MOBILE */
+    .reservation-section {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    .mint-img {
+        display: none;
+    }
+
+    .reservation-title {
+        font-size: 32px;
+    }
+
+    .reservation-subtitle {
+        font-size: 14px;
+    }
+
+    .double-row {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .double-row input,
+    .double-row select {
+        width: 100%;
+    }
+
+    /* FOOTER MOBILE */
+    footer {
+        padding: 50px 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    footer .ffz,
+    footer .fct,
+    footer .fne {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    footer .ffz h2 {
+        font-size: 50px;
+    }
+
+    footer .fct h3,
+    footer .fne h3 {
+        font-size: 22px;
+    }
+
+    .footerboc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerboc input {
+        width: 100%;
+    }
+
+    .footerboc button {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fsi {
+        justify-content: center;
+    }
+}
+
+/* ==================== RESPONSIVE - SMALL MOBILE (< 480px) ==================== */
+@media screen and (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 13px;
+    }
+
+    .contact-text {
+        font-size: 16px;
+    }
+
+    .location-text {
+        font-size: 15px;
+    }
+
+    .reservation-title {
+        font-size: 26px;
+    }
+
+    footer .ffz h2 {
+        font-size: 40px;
+    }
+
+    .fct p {
+        font-size: 14px;
+    }
+}

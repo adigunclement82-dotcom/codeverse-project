@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+/* ==================== HEADER ==================== */
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.leftbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 22px;
+  color: #fff;
+  display: flex;
+  position: relative;
+}
+.logo img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.menu-icon {
+  display: flex;
+  cursor: pointer;
+  padding-left: 15px;
+  position: relative;
+}
+.menu-icon .hamburger {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+}
+.menu-icon span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+}
+
+.menu-icon span:last-child {
+  width: 16px;
+}
+
+.rightbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.rightbar .phone {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.navbutton {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 10px 24px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbutton:hover {
+  background: #fff;
+  color: #1F2603;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("assets/hero image.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  position: relative;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ==================== STARTERS ==================== */
+.starters-section {
+  position: relative;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.blueberry-decor {
+  position: absolute;
+  top: -30px;
+  right: -120px;
+  width: 250px;
+  height: 250px;
+  /* background: radial-gradient(circle, rgba(94,106,26,0.3) 0%, transparent 70%); */
+  border-radius: 50%;
+}
+.blueberry-decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.menu-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.menu-subtext {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.starters-content {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  align-items: flex-start;
+}
+
+.starter-image img {
+  width: 450px;
+  height: 500px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.starter-list {
+  width: 320px;
+  text-align: left;
+}
+
+.menu-item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin: 0 0 5px 0;
+}
+
+.menu-item p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.menu-item .price {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+/* ==================== MAINS ==================== */
+.mains-section {
+  width: 100%;
+  padding: 60px 40px;
+}
+
+.mains-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.mains-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.mains-header p {
+  font-size: 14px;
+  color: #777;
+}
+
+.mains-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.mains-left {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.mains-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin: 10px 0 8px 0;
+  line-height: 1.1;
+}
+
+.mains-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.price-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price-line .dotted {
+  flex: 1;
+  border-bottom: 2px dotted #ccc;
+}
+
+.price-line .price {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+.mains-right {
+  width: 45%;
+}
+
+.mains-right img {
+  width: 100%;
+  height: 600px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* ==================== DRINKS ==================== */
+.drinks-section {
+  position: relative;
+  width: 100%;
+  padding: 60px 40px;
+}
+
+.avocado-decor {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 150px;
+  /* background: radial-gradient(ellipse, rgba(94,106,26,0.4) 0%, transparent 70%); */
+}
+.avocado-decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.drinks-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.drinks-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.drinks-header p {
+  font-size: 14px;
+  color: #777;
+}
+
+.drinks-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.drinks-left {
+  width: 45%;
+}
+
+.drinks-left img {
+  width: 90%;
+  height: 500px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.drinks-right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.drinks-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin: 10px 0 8px 0;
+  line-height: 1.1;
+}
+
+.drinks-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ==================== FORM ==================== */
+.form-section {
+  width: 100%;
+  background: #e7ecd8;
+  padding: 90px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  text-align: center;
+  width: 100%;
+  max-width: 950px;
+}
+
+.reservation h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.reservation p {
+  color: #555;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formbox input,
+.formbox select {
+  width: 260px;
+  height: 60px;
+  border-radius: 3px;
+  border: 1.5px solid #c3c3c3;
+  background: #fff;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  cursor: pointer;
+}
+
+.formbox input::placeholder {
+  color: #666;
+}
+
+form > button {
+  display: inline-block;
+  margin-top: 45px;
+  background: #233000;
+  color: #fff;
+  padding: 16px 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form > button:hover {
+  background: #1d2900;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+  width: 100%;
+  background: #1F2603;
+  padding: 70px 10%;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.ffz h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 90px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.fct h3,
+.fne h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.fct p {
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footerbox {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.footerbox input {
+  width: 250px;
+  padding: 12px 15px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.footerbox input::placeholder {
+  color: #ccc;
+}
+
+.footerbox button {
+  background: #5E6A1A;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+}
+
+.fne .small {
+  font-size: 12px;
+  color: #ddd;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.3);
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #ddd;
+}
+
+.fsi {
+  display: flex;
+  gap: 20px;
+}
+
+.fsi img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 70px;
+  }
+
+  .hero {
+    padding-left: 40px;
+  }
+
+  .menu-title {
+    font-size: 50px;
+  }
+.blueberry-decor {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: -100px;
+}
+  .starters-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .starter-image img {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+  }
+
+  .starter-list {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .menu-item h3 {
+    font-size: 30px;
+  }
+
+  .mains-content,
+  .drinks-content {
+    flex-direction: column;
+  }
+
+  .mains-left,
+  .mains-right,
+  .drinks-left,
+  .drinks-right {
+    width: 100%;
+  }
+
+  .mains-right {
+    order: -1;
+  }
+
+  .mains-right img,
+  .drinks-left img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .mains-item h3,
+  .drinks-item h3 {
+    font-size: 36px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ffz h2 {
+    font-size: 60px;
+  }
+
+  .footerbox {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .fsi {
+    order: -1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  header {
+    height: 80px;
+  }
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .rightbar .phone {
+    display: none;
+  }
+
+  .navbutton {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .starters-section {
+    padding: 50px 15px;
+  }
+
+  .menu-title {
+    font-size: 36px;
+  }
+
+  .menu-subtext {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .starter-image img {
+    height: 300px;
+  }
+
+  .menu-item h3 {
+    font-size: 24px;
+  }
+
+  .menu-item .price {
+    top: 35px;
+  }
+
+  .mains-section,
+  .drinks-section {
+    padding: 40px 15px;
+  }
+
+  .mains-header h2,
+  .drinks-header h2 {
+    font-size: 36px;
+  }
+
+  .mains-item h3,
+  .drinks-item h3 {
+    font-size: 28px;
+  }
+
+  .mains-right img,
+  .drinks-left img {
+    height: 280px;
+  }
+
+  .blueberry-decor img {
+    position: absolute;
+    width: 50%;
+    top: -70px;
+    right: 100px;
+  }
+
+    
+
+  .form-section {
+    padding: 50px 15px;
+  }
+
+  .reservation h2 {
+    font-size: 32px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formbox input,
+  .formbox select {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  form > button {
+    margin-top: 30px;
+    padding: 14px 40px;
+  }
+
+  footer {
+    padding: 50px 20px;
+  }
+
+  .ffz h2 {
+    font-size: 48px;
+  }
+
+  .fct h3,
+  .fne h3 {
+    font-size: 22px;
+  }
+
+  .footerbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerbox input {
+    width: 100%;
+    max-width: 280px;
+  }
+}

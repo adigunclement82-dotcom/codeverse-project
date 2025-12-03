@@ -1,0 +1,1522 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  /* --- HEADER --- */
+header {
+  background-color: #233000;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.foodzero {
+  height: 40px;
+  width: 100px;
+}
+.leftbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+
+
+
+.menu-icon {
+  width: 30px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.fz {
+  /* display: ; */
+  border: 1px solid;
+  font-family: "georgia" serif;
+  /* position: fixed; */
+  font-size: 22px;
+}
+.bar {
+  height: 100%;
+  width: 100%;
+}
+
+.rightbar {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.rightbar p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.navbutton {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.navbutton:hover {
+  background-color: white;
+  color: black;
+}
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+  width: 100%;
+  position: relative;
+  background-color: #233000
+  ;
+
+}
+.uphero{
+  flex: 1;
+  display: block;
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+.upherotext {
+  line-height: 0.9;
+  overflow: hidden;
+  font-size: 50px;
+  text-wrap: nowrap;
+  height: 280px;
+  width: 650px;
+  position: absolute;
+  left: 150px;
+  bottom: 240px;
+  z-index: 2;
+  color: white;
+}
+.upheroimg {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  left: 700px;
+  z-index: 1;
+  top: 170px;
+}
+.upheroimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.rowimg img {
+  display: flex;
+  height: 100%;
+  width: 33%;
+  object-fit: cover;
+  /* margin: 0 10px; */
+}
+.rowimg {
+  display: flex;
+  position: absolute;
+  height: 120px;
+  width: 400px;
+  top: 350px;
+  left: -120px;
+  gap: 10px;
+
+}
+.downhero {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex: 1;
+  
+
+}
+.downtext {
+  position: absolute;
+  height: 100px;
+  width: 250px;
+  top: -120px;
+  left: 45px;
+  rotate: 90deg;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  
+
+}
+.leftblock {
+  height: 500px;
+  width: 200px;
+  margin: 50px;
+  /* position: absolute;
+  top: 120px;
+  left: 150px; */
+  flex: 1;
+  position: relative;
+}
+.leftblock img {
+  height: 65%;
+  width: 65%;
+  object-fit: cover;
+  position: absolute;
+  left: 100px;
+
+}
+.leftblock h2 {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  font-size: 36px;
+  color: white;
+
+}
+.leftblock p {
+  position: absolute;
+  top: 450px;
+  left: 100px;
+  font-size: 16px;
+  color: white;
+}
+.rightblock{
+  margin: 50px;
+  flex: 1;
+  height: 500px;
+  width: 200px;
+  position: relative;
+}
+.rightblock img {
+  height: 75%;
+  width: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 125px;
+  left: 150px;
+}
+.rightblock p {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  font-size: 16px;
+  color: white;
+}
+/* second section */
+/* ————————————————
+   MENU SECTION CONTAINER
+——————————————— */
+.fs {
+  background: #fff;
+  padding: 100px 120px;
+  font-family: "Georgia", serif;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.menu {
+  padding-bottom: 50px;
+}
+
+.fs .menu h2 {
+  font-size: 42px;
+  color: #000;
+  margin-bottom: 10px;
+  /* padding-bottom: 200px; */
+}
+
+.fs .menu p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 50px;
+  line-height: 1.4;
+}
+
+
+/* ————————————————
+   GRID LAYOUT
+——————————————— */
+.submenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+
+/* ————————————————
+   INDIVIDUAL MENU ITEM BOXES
+——————————————— */
+.deep, .steak, .cucumber, .natural {
+  width: 48%;
+}
+
+
+/* ————————————————
+   PRICE + DOTTED LINE
+——————————————— */
+.deep span,
+.steak span,
+.cucumber span,
+.natural span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.deep img,
+.steak img,
+.cucumber img,
+.natural img {
+  height: 2px;
+  object-fit: contain;
+  width: 70%;
+  margin-bottom: 4px;
+  vertical-align: middle;
+}
+.steak {
+  white-space: nowrap;
+  padding-left: 0;
+}
+
+
+/* ————————————————
+   TITLE & TEXT
+——————————————— */
+.deep h3,
+.steak h3,
+.cucumber h3,
+.natural h3 {
+  font-size: 22px;
+  color: #000;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.deep p,
+.steak p,
+.cucumber p,
+.natural p {
+  color: #666;
+  font-size: 14px;
+}
+
+
+
+.line-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.dots {
+  flex: 1;
+  border-bottom: 2px dotted #000;
+}
+
+.price {
+  font-weight: 600;
+}
+.leaf {
+  position: absolute;
+  top: -180px;      /* adjust until it matches your design */
+  right: -120px;         /* push to the right corner */
+  width: 500px;     /* make container wide enough */
+  height: 700px;    /* makes cropping possible */
+  /* overflow: hidden;  */
+  z-index: 0;
+}
+.leaf img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* forces cropping */
+  opacity: 0.6;      /* your design uses faded leaf */
+  transform: rotate(250deg); /* adjust rotation as needed */
+}
+
+/* cooking man section */
+.cook {
+    background: #e5f4ee; /* light green background */
+    padding: 90px 70px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* LEFT SIDE */
+.cookman {
+    flex: 1;
+    width: 30%;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+
+.c-b {
+    width: 40%;
+    position: relative;
+    z-index: 3;
+    top: 40px;
+    left: 10px;
+}
+
+.c-m {
+    width: 85%;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* LEAFS */
+.cookleaf {
+    position: absolute;
+    width: 40%;
+    opacity: 0.35;
+    top: -50px;
+}
+.lr {
+  position: absolute;
+  width: 45%;
+  top: 120px;
+  left: 100px;
+}
+
+/* RIGHT TEXT SIDE */
+.cooktext {
+    width: 40%;
+    position: relative;
+}
+
+.cooktext h3 {
+  position: absolute;
+  top: -150px;
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cooktext p {
+    width: 80%;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.description {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px;
+  margin: 40px;
+  
+}
+.premium {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: row; */
+  /* position: relative; */
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+}
+.circle {
+  position: absolute;
+  display: flex;
+  position: relative;
+  height: 50%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  left: 80px;
+  /* top: 20px; */
+  
+}
+.sub-icon1 {
+  position: absolute;
+  height: 80px;
+  width: 90px;
+  left: 180px;
+  top: 110px;
+  
+}
+.sub-icon2 {
+  position: absolute;
+  height: 120px;
+  width: 90px;
+  left: 37.5rem;
+  top: 95px;
+}
+.sub-icon3 {
+  position: absolute;
+  height: 120px;
+  width: 90px;
+  left: 64rem;
+  top: 90px;
+}
+.topic1 {
+  position: absolute;
+  left: 150px;
+  top: 330px;
+}
+.sub-topic1 {
+  position: absolute;
+  left: 80px;
+  top: 370px;
+  text-align: center;
+}
+.topic2 {
+  position: absolute;
+  left: 550px;
+  top: 330px;
+}
+.sub-topic2 {
+  position: absolute;
+  left: 500px;
+  top: 370px;
+  text-align: center;
+}
+.topic3 {
+  position: absolute;
+  left: 1000px;
+  top: 330px;
+}
+.sub-topic3 {
+  position: absolute;
+  left: 900px;
+  top: 370px;
+  text-align: center;
+}
+
+
+/* --- MAIN WRAPPER --- */
+.pear {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 160px;
+  padding: 100px;
+}
+
+/* --- EACH CARD --- */
+.pears {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Georgia", serif;
+  gap: 40px;
+}
+
+/* --- IMAGE WRAPPER --- */
+.pear-img {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.pear-img img.left-pear {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* --- FASHION TAG --- */
+.fashion {
+  position: absolute;
+  right: 2px;
+  top: 0;
+  background: #233000;
+  padding: 15px 18px;
+  border-radius: 3px;
+}
+
+.fashion h2 {
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* --- COMMENT ROW (profile + text) --- */
+.pearcomment span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.pearcomment img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.pearcomment p {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+}
+
+/* --- TITLE + DESCRIPTION --- */
+.fruitpear h2 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.fruitpear img {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.fruitpear p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* --- READ MORE --- */
+.pear-arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.pear-arrow h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pear-arrow img {
+  width: 20px;
+}
+/* ----------- FORM SECTION ----------- */
+.form-section {
+  width: 100%;
+  background: #e7ecd8; /* light pastel green */
+  padding: 90px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* ----------- FORM CONTAINER ----------- */
+form {
+  text-align: center;
+  width: 100%;
+  max-width: 950px; /* matches the screenshot width */
+  margin: auto;
+}
+
+/* ----------- HEADINGS ----------- */
+.reservation h2 {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Georgia", serif;
+  margin-bottom: 8px;
+}
+
+.reservation p {
+  color: #555;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+/* ----------- INPUT BOX ROW ----------- */
+form .formbox {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* ----------- INPUT STYLING ----------- */
+form input {
+  width: 260px;
+  height: 60px;             /* taller boxes */
+  border-radius: 3px;       /* slight rounding, like screenshot */
+  border: 1.5px solid #c3c3c3;
+  background: #fff;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Georgia", serif;
+  color: #333;
+  outline: none;
+}
+
+/* placeholder */
+form input::placeholder {
+  color: #666;
+  font-size: 15px;
+}
+
+/* ----------- BOOK NOW BUTTON ----------- */
+form button {
+  display: inline-block;
+  margin-top: 45px;
+  background: #233000;   /* dark green */
+  color: #fff;
+  padding: 14px 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+form button:hover {
+  background: #1d2900;
+}
+/* FORM INPUTS + SELECT */
+form input,
+form select {
+  width: 260px;
+  height: 60px;
+  border-radius: 3px;
+  border: 1.5px solid #c3c3c3;
+  background: #fff;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Georgia", serif;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+}
+
+/* PLACEHOLDER */
+form input::placeholder {
+  color: #666;
+  font-size: 15px;
+}
+
+/* CUSTOM DROPDOWN ARROW */
+form select {
+  background-image: url("Project Icon/down-arrow.png"); /* your arrow image */
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 14px;
+}
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap');
+
+/* ---------------------- */
+/*   CALORIES SECTION     */
+/* ---------------------- */
+
+.calories {
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.caloriestext h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.caloriestext p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* WRAPPER */
+.c-wrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* EACH BOX */
+.c-box {
+  width: 400px;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* IMAGE */
+.c-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* HEADER ON TOP OF IMAGE */
+.c-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 20px;
+  z-index: 5;
+
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  color: black;
+  
+}
+.energy {
+  font-size: 40px;
+}
+
+/* REMOVE WRONG ARROW — KEEP ONLY USER ARROW PNG */
+.c-header .arrow {
+  display: none;
+}
+
+/* USING USER'S ARROW IMAGE */
+.c-header img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* REMOVE ROUNDED CORNERS (YOU REQUESTED THIS) */
+.c-box {
+  border-radius: 0;
+}
+
+/* --------------------------------- */
+/*         LOREM QUOTE SECTION       */
+/* --------------------------------- */
+
+.lorem {
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+}
+
+
+/* ---------------- TEXT + QUOTE MARK ---------------- */
+
+.loremtext {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.loremtext h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000;
+}
+
+/* Big faint quotation mark */
+.loremtext img {
+  position: absolute;
+  right: -20px;
+  top: 20px;
+  width: 280px;
+  /* opacity: 0.12; */
+  z-index: -1;
+}
+
+
+/* ---------------- PROFILE SECTION ---------------- */
+
+.leftlorem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 15%;
+  margin-top: 60px;
+}
+
+.leftlorem img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.leftlorem h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.leftlorem p {
+  font-family: "Inter", sans-serif;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #777;
+}
+
+
+/* ---------------- RIGHT ARROWS + COUNT ---------------- */
+
+.rightlorem {
+  position: absolute;
+  right: 18%;
+  bottom: 45px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #000;
+}
+
+.rightlorem img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+/* ------------------------------- */
+/*            FOOTER               */
+/* ------------------------------- */
+
+footer {
+  width: 100%;
+  background-color: #1F2603; /* exact screenshot color */
+  padding: 70px 10%;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+/* --- TOP 3 COLUMNS LAYOUT --- */
+footer .ffz,
+footer .fct,
+footer .fne {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+}
+
+footer .ffz h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 100px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+footer .fct h3,
+footer .fne h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+footer .fct p {
+  line-height: 1.8;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* NEWSLETTER BOX */
+.footerboc {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.footerboc input {
+  width: 250px;
+  padding: 12px 15px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+
+.footerboc input::placeholder {
+  color: #ccc;
+}
+
+.footerboc button {
+  background-color: #5E6A1A;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+}
+
+/* Small text under newsletter */
+.fne p {
+  font-size: 11px;
+  margin-top: -5px;
+  color: #ddd;
+}
+
+
+/* ---------------- FULL-WIDTH FOOTER LINE ---------------- */
+footer > img {
+  display: block;
+  width: 100%;
+  margin: 40px 0 20px 0;
+  /* width: 100vw !important;   
+  max-width: 100vw !important; */
+}
+
+
+
+/* ---------------- BOTTOM ROW ---------------- */
+footer > p {
+  float: left;
+  font-size: 13px;
+  color: #ddd;
+}
+
+footer .fsi {
+  float: right;
+  display: flex;
+  gap: 20px;
+}
+
+footer .fsi img {
+  width: 40px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
+/* Clearfix to prevent float issues */
+footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+
+/* --- GLOBAL RESPONSIVE FIXES --- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+@media (max-width: 600px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-image {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-container,
+    .pear-container,
+    .mid1-2-container,
+    .cook-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .menu-card,
+    .pear-card,
+    .mid1-2-card,
+    .cook-card {
+        width: 90%;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+    .hero-content {
+        gap: 40px;
+    }
+
+    .menu-container,
+    .pear-container,
+    .mid1-2-container,
+    .cook-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-card,
+    .pear-card,
+    .mid1-2-card,
+    .cook-card {
+        width: 45%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+}
+@media (min-width: 992px) {
+    .menu-container,
+    .pear-container,
+    .mid1-2-container,
+    .cook-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+}
+/* End of CSS file */
+
+/* =========================
+   RESPONSIVE PATCH (append)
+   ========================= */
+
+/* GLOBAL FIXES (non-destructive) */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+header {
+    top: px;
+    left: 0;
+}
+
+
+/* prevent header overlap */
+body {
+  padding-top: 600px; /* matches header height so fixed header doesn't cover content */
+}
+
+/* make images and media scale safely */
+img, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* avoid unintentional horizontal scroll */
+*:focus { outline: none; }
+
+/* allow flex containers to wrap when needed (makes many blocks resilient) */
+.navbar, .submenu, .c-wrap, .pear, .description, .fs {
+  min-width: 0; /* allows children to shrink properly inside flex items */
+}
+
+/* NAVBAR: allow wrap/shrink if needed */
+.navbar {
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Make rightbar items able to shrink */
+.rightbar p, .navbutton {
+  flex-shrink: 1;
+  min-width: 0;
+}
+header .logo img {
+    width: 100%;       /* fixed width so it never shrinks too small */
+    max-width: 100%;    /* adapts but stays readable */
+    height: auto;
+}
+
+
+/* --- BREAKPOINT: Small devices <= 600px --- */
+@media (max-width: 600px) {
+
+  /* NAVBAR: compact, keep everything visible */
+  .navbar {
+    /* padding: 12px 16px; */
+    align-items: center;
+    /* justify-content: space-between; */
+
+  }
+
+
+  .leftbar {
+    gap: 8px;
+    align-items: center;
+  }
+  /* hide menu-icon? keep it visible but reduce size */
+  .menu-icon {
+    width: 26px;
+    height: 18px;
+  }
+  .foodzero {
+    width: 90px;
+    height: auto;
+  }
+  .rightbar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    /* width: 100%; */
+  }
+  .rightbar p {
+    font-size: 12px;
+  }
+  .navbutton {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  /* HERO: stack and reposition to avoid absolute overflow */
+  .upherotext {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: auto !important;
+    height: auto !important;
+    font-size: 20px !important;
+    line-height: 1.05;
+    padding: 45px 20px;
+    text-align: left;
+  }
+  .upherotext h1 {
+    padding-top: 100px;
+  
+  }
+
+  .upheroimg {
+    position: relative !important;
+    left: auto !important;
+    top: -150px !important;
+    width: 50% !important;
+    height: auto !important;
+    margin: 12px 0;
+  }
+
+  .rowimg {
+    position: relative !important;
+    left: 50px !important;
+    top: -50px !important;
+    width: 60% !important;
+    height: auto !important;
+    gap: 20px;
+  }
+  .rowimg img { width: calc(33.333% - 6px); }
+
+  /* downhero content stacking */
+  .downhero {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    padding: 10px;
+  }
+  .downtext {
+    position: relative !important;
+    rotate: 90deg !important;
+    top: -50px; left: -100px;
+    text-align: left;
+    font-size: 16px;
+  }
+   .rightblock {
+    width: 50% !important;
+    margin: 0px 0px !important;
+    height: auto;
+    top: -180px;
+  }
+  .rightblock img {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 50%;
+    height: 50%;
+  }
+  .leftblock {
+    width: 50% !important;
+    margin: 10px 12px !important;
+    height: auto;
+    top: -300px;
+    left: 150px;
+    position: relative;
+  }
+  .leftblock img, .rightblock img {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100%;
+    height: auto;
+  }
+  .leftblock h2 {
+    position: absolute !important;
+    color: white;
+    padding: 8px 0;
+    text-wrap: nowrap;
+    top: 200px;
+    left: -100px;
+  }
+  .leftblock p {
+    position: absolute !important;
+    top: 300px;
+    left: -100px;
+    font-size: 14px;
+    width: 80%;
+    text-wrap: nowrap;
+    padding-top: 15px;
+  }
+  .rightblock p {
+    position: absolute !important;
+    top: 100px;
+    left: 250px;
+    font-size: 14px;
+    width: 80%;
+    /* text-wrap: nowrap; */
+    padding-top: 15px;
+  }
+
+  /* MENU (fs) - stack single column */
+  .fs {
+    padding: 40px 20px 80px;
+  }
+  .submenu {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .deep, .steak, .cucumber, .natural {
+    width: 100% !important;
+  }
+
+  /* COOK: stack image and text */
+  .cook {
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cookman, .cooktext {
+    width: 100% !important;
+  }
+  .c-b, .cookleaf {
+    position: relative !important;
+    top: auto !important;
+    left: -50px !important;
+    right: auto !important;
+    width: 50% !important;
+    margin: 6px auto;
+  }
+  .c-m {
+    position: relative !important;
+    right: -50px !important;
+    top: -250px !important;
+    width: 80% !important;
+    margin: 12px auto;
+  }
+  .cooktext {
+    text-align: center;
+    margin-top: -200px;
+  }
+  .cooktext h3 {
+    position: static !important;
+    font-size: 36px !important;
+    text-align: center;
+    margin: 12px 0;
+  }
+  .cooktext p { width: 100%; padding: 0 12px; text-align: center; }
+
+  /* DESCRIPTION: stack three premium blocks vertically */
+  .description {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrap {
+    flex-direction: row;
+    /* gap: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* flex-wrap: wrap; */
+    
+  }
+  .wrap img {
+    position: absolute !important;
+    /* left: 100px; */
+  }
+  .premium {
+    width: 100% !important;
+    /* align-items: flex-start; */
+    padding: 18px 12px;
+  }
+  .circle, .sub-icon1, .sub-icon2, .sub-icon3 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 80px !important;
+    height: auto !important;
+    /* margin-bottom: 8px; */
+  }
+  .topic1, .topic2, .topic3,
+  .sub-topic1, .sub-topic2, .sub-topic3 {
+    position: static !important;
+    /* left: auto; top: auto; */
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* PEAR: stack cards */
+  .pear {
+    padding: 30px 20px;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pears {
+    width: 100% !important;
+  }
+  .pear-img { height: auto; }
+
+  /* CALORIES: let boxes stack */
+  .c-wrap {
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 12px;
+  }
+  .c-box {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .c-header { font-size: 18px; padding: 12px; }
+
+  /* LOREM / FOOTER: stack and center */
+  .loremtext { width: 90%; margin: 0 auto; font-size: 20px; }
+  .leftlorem { margin-left: 6%; margin-top: 18px; }
+  .rightlorem { position: static; margin: 18px auto; display:flex; gap:12px; justify-content:center; }
+
+  footer {
+    padding: 40px 6%;
+  }
+  footer .ffz, footer .fct, footer .fne {
+    display: block;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  footer .ffz h2 { font-size: 44px; }
+  footer .fct p { font-size: 16px; }
+  .footerboc { flex-direction: column; gap: 8px; align-items: stretch; }
+  .footerboc input { width: 100%; }
+}
+
+/* --- BREAKPOINT: Medium screens 601px - 991px --- */
+@media (min-width: 601px) and (max-width: 991px) {
+
+  /* NAVBAR */
+  .navbar { padding: 14px 20px; }
+  .foodzero { width: 95px; }
+  .menu-icon { width: 28px; }
+
+  /* HERO: moderate scaling, keep absolute positions but reduce offsets */
+  .upherotext {
+    position: absolute;
+    left: 40px;
+    bottom: 140px;
+    width: calc(60% - 40px);
+    font-size: 36px;
+    height: auto;
+    overflow: visible;
+  }
+  .upheroimg {
+    left: auto;
+    right: 40px;
+    top: 130px;
+    width: 360px;
+    height: auto;
+  }
+  .rowimg { left: auto; right: 40px; top: 320px; width: 320px; }
+
+  /* downhero columns become two columns but flexible */
+  .downhero { flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 20px; padding: 0 20px; }
+  .leftblock, .rightblock { width: calc(50% - 40px); margin: 20px; }
+
+  /* MENU */
+  .fs { padding: 60px 40px 120px; }
+  .submenu { flex-wrap: wrap; gap: 28px; }
+  .deep, .steak, .cucumber, .natural { width: calc(50% - 20px); }
+
+  /* COOK */
+  .cook { padding: 60px 40px; }
+  .cookman { width: 50%; }
+  .cooktext { width: 45%; }
+  .c-m { right: 40px; top: 60px; width: 100%; }
+
+  /* DESCRIPTION icons & text reposition (use percentages to keep layout similar) */
+  .sub-icon1 { left: 20%; top: 40px; }
+  .sub-icon2 { left: 50%; top: 40px; }
+  .sub-icon3 { left: 78%; top: 40px; }
+  .topic1 { left: 30px; top: 200px; position: absolute; }
+  .topic2 { left: 340px; top: 200px; position: absolute; }
+  .topic3 { left: 640px; top: 200px; position: absolute; }
+
+  /* PEAR */
+  .pear { padding: 60px 40px; gap: 40px; flex-wrap: wrap; justify-content: center; }
+  .pears { width: 48%; }
+
+  /* CALORIES: 2 columns if space */
+  .c-wrap { flex-wrap: wrap; gap: 20px; }
+  .c-box { width: calc(50% - 20px); height: 520px; }
+
+  /* Footer: 3 columns compress into 2 if needed */
+  footer { padding: 56px 8%; }
+  footer .ffz, footer .fct, footer .fne { width: 48%; display: inline-block; vertical-align: top; }
+  footer .ffz { width: 100%; } /* keep big brand stacked on top for medium */
+}
+
+/* --- BREAKPOINT: Desktop keep layout (>=992px) --- */
+@media (min-width: 992px) {
+  /* Keep your original desktop styling intact; this media query is intentionally empty
+     so that earlier absolute positions remain as you designed. */
+}

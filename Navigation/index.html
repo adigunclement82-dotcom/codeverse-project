@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FoodZero — Coming Soon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><img src="assets/Logo.png" alt=""></div>
+
+    <button class="hamburger">
+        <img src="assets/line.png" alt="">
+    </button>
+
+    <div class="header-right">
+      <div class="phone">+86 852 346 000</div>
+      <a class="btn-reserve" href="#">Reservations</a>
+    </div>
+  </header>
+
+  <main class="hero" role="main" aria-labelledby="comingTitle">
+    <!-- flipped background implemented in ::before so content isn't flipped -->
+    <div class="hero-inner">
+      <h1 id="comingTitle" class="hero-title">COMING SOON</h1>
+
+      <div class="divider dotted" aria-hidden="true"></div>
+
+      <div class="countdown" aria-live="polite" aria-atomic="true">
+        <div class="time-col">
+          <div class="time-num" id="months">00</div>
+          <div class="time-label">Month</div>
+        </div>
+        <div class="time-col">
+          <div class="time-num" id="days">00</div>
+          <div class="time-label">Days</div>
+        </div>
+        <div class="time-col">
+          <div class="time-num" id="hours">00</div>
+          <div class="time-label">Hours</div>
+        </div>
+        <div class="time-col">
+          <div class="time-num" id="minutes">00</div>
+          <div class="time-label">Minutes</div>
+        </div>
+        <div class="time-col">
+          <div class="time-num" id="seconds">00</div>
+          <div class="time-label">Second</div>
+        </div>
+      </div>
+
+      <a class="btn-view" href="#">View Menu</a>
+    </div>
+
+    <footer class="hero-footer">
+      <div class="copyright">© FoodZero</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
